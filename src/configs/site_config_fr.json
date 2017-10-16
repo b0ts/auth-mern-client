@@ -1,0 +1,53 @@
+{
+"menuElements": {
+    "brand": { 
+      "eventKey": "1", 
+      "altText": "Menu Thumbnail", 
+      "imageSource": "/img/menu_thumbnail.jpg", 
+      "link": "/" },
+    "items": [
+      { "eventKey": "2", "type": "navItem", "title": "Home", 
+        "link": "/home/", "render": "allways"},
+      { "eventKey": "3", "type": "navItem", "title": "Users", "link": "/users/", 
+        "render": "authenticated" },
+      { "eventKey": "4", "type": "submenu", "title": "Drop Down", 
+        "submenu": "dropDownSubmenu", "render": "authenticated" },
+      { "eventKey": "5", "type": "navItem", "title": "Contact", "link": "/contact/", 
+        "render": "allways" },
+      { "eventKey": "6", "type": "navItem", "title": "Login", "link": "/login/", 
+        "render": "notAuthenticated" },
+      { "eventKey": "7", "type": "navItem", "title": "Logout", "link": "/logout/", 
+        "render": "authenticated" }      
+    ],
+    "dropDownSubmenu": [
+      { "eventKey": "4.1", "type": "menuItem", "title": "One", 
+        "link": "/one/", "render": "authenticated" },
+      { "eventKey": "4.2", "type": "menuItem", "title": "Two", 
+        "link": "/two/", "render": "authenticated" }, 
+      { "eventKey": "4.3", "type": "menuItem", "title": "Three", 
+        "link": "/three/", "render": "authenticated" },
+      { "eventKey": "4.4", "type": "menuItem", "title": "Four", 
+        "link": "/four/", "render": "authenticated" }   
+    ]
+  },
+  
+  "footer": {
+    "socialText": "Connect: ",
+    "languageText": " Language: ",
+    "socialLinks": [
+      {"socialKey": "1", "url": "https://www.facebook.com/"},
+      {"socialKey": "2", "url": "https://twitter.com/"},
+      {"socialKey": "3", "url": "https://www.instagram.com/"},
+      {"socialKey": "4", "url": "https://www.pinterest.com/"},
+      {"socialKey": "5", "url": "https://www.linkedin.com/"},
+      {"socialKey": "6", "url": "https://plus.google.com/"},
+      {"socialKey": "7", "url": "https://www.youtube.com/"},
+      {"socialKey": "8", "url": "https://www.yelp.com/"}    
+    ],
+    "emailImage": "/img/email-envelope.svg",
+    "emailAlt": "Email rhbourbonnais@yahoo.com",
+    "emailURL": "mailto:rhbourbonnais@yahoo.com?subject=InfoRequest",
+    "notificationText": "\u24D2 This is where the Copyright Notice goes!",
+    "notificationLink": "/credits/"
+  } 
+}
